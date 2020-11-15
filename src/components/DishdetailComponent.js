@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 
 function RenderDish({dish}){
-    console.log('Dish', dish) 
     if (dish != null){
         return(   
             <Card>
@@ -23,7 +22,6 @@ function RenderDish({dish}){
 
 function RenderComments({comms}){
     let comments;
-    console.log('Comments', comms)
     if (comms != null){
         comments = comms.map ( (comment) => 
             <ul className="list-unstyled" key={comment.id}>
